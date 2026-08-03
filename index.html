@@ -1,423 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VISION MOTION PICTURES | Film Production Studio</title>
 
-    <!-- ========================================= -->
-    <!-- BASIC META -->
-    <!-- ========================================= -->
+<meta name="description" content="Vision Motion Pictures - Independent Film Production Studio specializing in cinematic storytelling, cinematography, editing, color grading and AI filmmaking.">
+<meta name="theme-color" content="#000000">
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="icon" type="image/png" href="assets/logo/favicon.png">
+<link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">
 
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
-
-    <meta name="theme-color" content="#000000">
-
-    <meta name="robots"
-        content="index, follow, max-image-preview:large">
-
-    <meta name="author"
-        content="VISION">
-
-    <meta name="copyright"
-        content="© 2026 Vision Motion Pictures">
-
-    <meta name="language"
-        content="English">
-
-    <meta name="revisit-after"
-        content="7 days">
-
-    <meta name="generator"
-        content="Visual Studio Code">
-
-    <!-- ========================================= -->
-    <!-- TITLE -->
-    <!-- ========================================= -->
-
-    <title>
-        Vision Motion Pictures | Film Director | Cinematography | Creative Studio
-    </title>
-
-    <!-- ========================================= -->
-    <!-- SEO -->
-    <!-- ========================================= -->
-
-    <meta name="description"
-        content="Vision Motion Pictures is an independent cinematic film production studio specializing in film direction, cinematography, creative direction, editing, color grading, commercials, music videos and AI filmmaking.">
-
-    <meta name="keywords"
-        content="
-        Vision Motion Pictures,
-        Vision,
-        Film Director,
-        Punjabi Film Director,
-        Cinematographer,
-        Creative Director,
-        Music Video Director,
-        Film Production,
-        Commercial Director,
-        Screenwriter,
-        AI Filmmaker,
-        Video Editor,
-        Colorist,
-        Production House,
-        India">
-
-    <!-- ========================================= -->
-    <!-- CANONICAL -->
-    <!-- ========================================= -->
-
-    <link rel="canonical"
-        href="https://deepduharia.github.io/Vision-Motion-Pictures/">
-
-    <!-- ========================================= -->
-    <!-- FAVICON -->
-    <!-- ========================================= -->
-
-    <link rel="icon"
-        href="favicon.ico">
-
-    <link rel="apple-touch-icon"
-        href="assets/icons/apple-touch-icon.png">
-
-    <!-- ========================================= -->
-    <!-- OPEN GRAPH -->
-    <!-- ========================================= -->
-
-    <meta property="og:type"
-        content="website">
-
-    <meta property="og:site_name"
-        content="Vision Motion Pictures">
-
-    <meta property="og:title"
-        content="Vision Motion Pictures">
-
-    <meta property="og:description"
-        content="Crafting Stories Beyond The Screen.">
-
-    <meta property="og:url"
-        content="https://deepduharia.github.io/Vision-Motion-Pictures/">
-
-    <meta property="og:image"
-        content="assets/images/social/social-preview.jpg">
-
-    <!-- ========================================= -->
-    <!-- TWITTER -->
-    <!-- ========================================= -->
-
-    <meta name="twitter:card"
-        content="summary_large_image">
-
-    <meta name="twitter:title"
-        content="Vision Motion Pictures">
-
-    <meta name="twitter:description"
-        content="Crafting Stories Beyond The Screen.">
-
-    <meta name="twitter:image"
-        content="assets/images/social/social-preview.jpg">
-
-    <!-- ========================================= -->
-    <!-- GOOGLE FONTS -->
-    <!-- ========================================= -->
-
-    <link rel="preconnect"
-        href="https://fonts.googleapis.com">
-
-    <link rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-
-    <!-- ========================================= -->
-    <!-- FONT AWESOME -->
-    <!-- ========================================= -->
-
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
-    <!-- ========================================= -->
-    <!-- AOS -->
-    <!-- ========================================= -->
-
-    <link rel="stylesheet"
-        href="https://unpkg.com/aos@2.3.4/dist/aos.css">
-
-    <!-- ========================================= -->
-    <!-- CSS -->
-    <!-- ========================================= -->
-
-    <link rel="stylesheet"
-        href="style.css">
-
-    <!-- ========================================= -->
-    <!-- SCHEMA -->
-    <!-- ========================================= -->
-
-    <script type="application/ld+json">
-    {
-      "@context":"https://schema.org",
-      "@type":"Organization",
-      "name":"Vision Motion Pictures",
-      "url":"https://deepduharia.github.io/Vision-Motion-Pictures/",
-      "logo":"https://deepduharia.github.io/Vision-Motion-Pictures/assets/logo/logo.png",
-      "description":"Independent cinematic film production studio.",
-      "founder":{
-        "@type":"Person",
-        "name":"VISION"
-      }
-    }
-    </script>
-
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,Helvetica,sans-serif;background:#000;color:#fff}
+header{position:fixed;top:0;left:0;width:100%;padding:20px 60px;background:rgba(0,0,0,.55);backdrop-filter:blur(10px);z-index:100}
+nav{display:flex;justify-content:space-between;align-items:center}
+.logo img{height:52px}
+nav ul{display:flex;gap:30px;list-style:none}
+nav a{text-decoration:none;color:#fff}
+.hero{position:relative;height:100vh;overflow:hidden}
+.hero-bg,.hero-video,.hero-overlay{
+position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero-video{opacity:.45}
+.hero-overlay{opacity:.65}
+.hero-content{
+position:relative;z-index:2;height:100%;
+display:flex;flex-direction:column;
+justify-content:center;align-items:center;
+text-align:center;padding:20px}
+.hero h1{font-size:64px;margin:20px 0}
+.hero p{max-width:800px;font-size:20px;line-height:1.7}
+.buttons{margin-top:40px}
+.buttons a{
+display:inline-block;
+padding:16px 34px;
+margin:10px;
+border:1px solid #fff;
+color:#fff;
+text-decoration:none}
+.buttons a:first-child{background:#fff;color:#000}
+@media(max-width:768px){
+header{padding:15px 20px}
+nav ul{display:none}
+.hero h1{font-size:42px}
+.hero p{font-size:17px}
+}
+</style>
 </head>
 
 <body>
-    
 
-    <!--
-    ==========================================
-    PART 02A COMPLETE
-    ==========================================
+<header>
+<nav>
 
-    NEXT:
+<a class="logo" href="index.html">
+<img src="assets/logo/logo-white.png" alt="Vision Motion Pictures">
+</a>
 
-    Premium Loading Screen
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Services</a></li>
+<li><a href="#">Portfolio</a></li>
+<li><a href="#">Showreel</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
 
-    Header
-
-    Navigation
-
-    Hero Section
-
-    Video Background
-
-    CTA Buttons
-
-    Scroll Indicator
-
-    ==========================================
-    -->
-<!-- ===================================================== -->
-<!-- PRELOADER -->
-<!-- ===================================================== -->
-
-<div id="preloader">
-
-    <div class="loader-content">
-
-        <span class="loader-line"></span>
-
-        <h1 class="loader-logo">
-            VISION
-        </h1>
-
-        <p class="loader-text">
-            MOTION PICTURES
-        </p>
-
-    </div>
-
-</div>
-
-<!-- ===================================================== -->
-<!-- HEADER -->
-<!-- ===================================================== -->
-
-<header class="header">
-
-    <div class="container">
-
-        <a href="index.html" class="logo">
-
-            <img
-                src="assets/logo/logo-white.png"
-                alt="Vision Motion Pictures Logo">
-
-            <span>
-                VISION
-            </span>
-
-        </a>
-
-        <nav class="navbar">
-
-            <ul>
-
-                <li>
-                    <a href="index.html" class="active">
-                        Home
-                    </a>
-                </li>
-
-                <li>
-                    <a href="pages/about.html">
-                        About
-                    </a>
-                </li>
-
-                <li>
-                    <a href="pages/services.html">
-                        Services
-                    </a>
-                </li>
-
-                <li>
-                    <a href="pages/portfolio.html">
-                        Portfolio
-                    </a>
-                </li>
-
-                <li>
-                    <a href="pages/showreel.html">
-                        Showreel
-                    </a>
-                </li>
-
-                <li>
-                    <a href="pages/blog.html">
-                        Blog
-                    </a>
-                </li>
-
-                <li>
-                    <a href="pages/contact.html">
-                        Contact
-                    </a>
-                </li>
-
-            </ul>
-
-        </nav>
-
-        <a
-            href="pages/contact.html"
-            class="header-btn">
-
-            Start Project
-
-        </a>
-
-        <button
-            class="mobile-menu">
-
-            <i class="fa-solid fa-bars"></i>
-
-        </button>
-
-    </div>
-
+</nav>
 </header>
-
-<!-- ===================================================== -->
-<!-- HERO -->
-<!-- ===================================================== -->
 
 <section class="hero">
 
-    <video
-        autoplay
-        muted
-        loop
-        playsinline
-        class="hero-video">
+<picture>
+<source media="(max-width:768px)" srcset="assets/images/hero/hero-mobile.jpg">
+<img class="hero-bg"
+src="assets/images/hero/hero-background.jpg"
+alt="Hero Background">
+</picture>
 
-        <source
-            src="assets/videos/hero-showreel.mp4"
-            type="video/mp4">
+<video class="hero-video" autoplay muted loop playsinline>
+<source src="assets/videos/hero-showreel.mp4" type="video/mp4">
+</video>
 
-    </video>
+<img
+class="hero-overlay"
+src="assets/images/hero/hero-overlay.png"
+alt="">
 
-    <div class="hero-overlay"></div>
+<div class="hero-content">
 
-    <div class="hero-content">
+<h5>INDEPENDENT FILM PRODUCTION STUDIO</h5>
 
-        <span class="hero-subtitle">
+<h1>Crafting Stories<br>Beyond The Screen</h1>
 
-            Independent Film Production Studio
+<p>
+Vision Motion Pictures is an independent cinematic production studio
+specializing in film direction, cinematography, editing,
+color grading, commercials, music videos and AI filmmaking.
+</p>
 
-        </span>
+<div class="buttons">
+<a href="#">Watch Showreel</a>
+<a href="#">Explore Portfolio</a>
+</div>
 
-        <h1>
-
-            Crafting Stories
-
-            <br>
-
-            Beyond The Screen
-
-        </h1>
-
-        <p>
-
-            Vision Motion Pictures creates cinematic experiences through
-            film direction, cinematography, creative direction,
-            editing, color grading, and AI-powered visual storytelling.
-
-        </p>
-
-        <div class="hero-buttons">
-
-            <a
-                href="pages/showreel.html"
-                class="btn-primary">
-
-                Watch Showreel
-
-            </a>
-
-            <a
-                href="pages/portfolio.html"
-                class="btn-secondary">
-
-                Explore Portfolio
-
-            </a>
-
-        </div>
-
-    </div>
-
-    <div class="hero-social">
-
-        <a href="#">
-            <i class="fab fa-instagram"></i>
-        </a>
-
-        <a href="#">
-            <i class="fab fa-youtube"></i>
-        </a>
-
-        <a href="#">
-            <i class="fab fa-linkedin"></i>
-        </a>
-
-        <a href="#">
-            <i class="fab fa-github"></i>
-        </a>
-
-    </div>
-
-    <a
-        href="#about"
-        class="scroll-down">
-
-        <span></span>
-
-        Scroll
-
-    </a>
+</div>
 
 </section>
 
-<!-- ===================================================== -->
-<!-- END HERO -->
-<!-- ===================================================== -->
 </body>
-
 </html>
