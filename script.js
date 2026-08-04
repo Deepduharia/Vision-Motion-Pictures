@@ -3886,6 +3886,47 @@ APP.log(
     - Emit final ready events
 
 ======================================================================*/
+/*==================================================
+LOADER FAIL SAFE
+==================================================*/
+
+APP.loaderFailsafe=function(){
+
+    setTimeout(()=>{
+
+        if(
+            APP.state.loading
+        ){
+
+            console.warn(
+                "Loader timeout - forcing recovery"
+            );
+
+
+            APP.state.loading=false;
+
+
+            APP.state.ready=true;
+
+
+            if(
+                APP.hideLoader
+            ){
+
+                APP.hideLoader();
+
+            }
+
+
+            EVENTS?.emit?.(
+                "websiteReady"
+            );
+
+        }
+
+    },10000);
+
+};
 
 
 /*==================================================
@@ -4374,7 +4415,7 @@ document.addEventListener(
     ()=>{
 
 
-        APP.start();
+        APP.loaderFailsafe();;
 
 
     }
