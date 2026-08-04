@@ -1,3 +1,32 @@
+window.EVENTS = window.EVENTS || {
+
+    listeners:{},
+
+    on:function(
+        event,
+        callback
+    ){
+
+        this.listeners[event] ||= [];
+
+        this.listeners[event].push(callback);
+
+    },
+
+
+    emit:function(
+        event,
+        data
+    ){
+
+        (this.listeners[event]||[])
+        .forEach(
+            fn=>fn(data)
+        );
+
+    }
+
+};
 /*=====================================================================
 
     Director VISION
